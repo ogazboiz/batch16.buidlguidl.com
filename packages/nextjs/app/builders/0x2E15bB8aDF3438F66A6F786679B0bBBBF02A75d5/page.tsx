@@ -105,8 +105,8 @@ export default function BuilderPage() {
         <h2 className="text-lg font-medium mb-3 text-center">Get In Touch</h2>
         <div className="bg-base-200 p-4 rounded-lg text-center">
           <p className="mb-2">Interested in working together? Reach out via:</p>
-          <a href="mailto:akpolo@example.com" className="text-primary hover:underline">
-            akpolo@example.com
+          <a href="mailto:ogazboizakpolo@gmail.com" className="text-primary hover:underline">
+            ogazboizakpolo@gmail.com
           </a>
           <p className="mt-2 text-sm">
             Or schedule a call through my{" "}
