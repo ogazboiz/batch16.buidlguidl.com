@@ -6,14 +6,14 @@ import { Address } from "~~/components/scaffold-eth";
 const socialLinks = [
   {
     href: "https://github.com/Rampop01",
-    label: "GitHub Profile",
+    label: "GitHub",
     icon: <GitHubIcon />,
     className:
       "btn bg-primary hover:bg-primary/90 text-primary-content btn-md normal-case hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-primary/30 dark:bg-accent dark:hover:bg-accent/90 dark:text-accent-content",
   },
   {
     href: "https://twitter.com/OmowumiRahmat",
-    label: "Twitter Profile",
+    label: "Twitter",
     icon: <TwitterIcon />,
     className:
       "btn bg-info hover:bg-info/90 text-info-content btn-md normal-case hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-info/30 dark:bg-accent dark:hover:bg-accent/90 dark:text-accent-content",
