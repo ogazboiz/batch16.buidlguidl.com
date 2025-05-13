@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { NextPage } from "next";
 
@@ -13,40 +14,43 @@ const MethelyProfile: NextPage = () => {
                 <div className="w-24 h-24 rounded-full bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] text-[20px] font-bold text-white flex items-center justify-center">
                   MTH
                 </div>
-                <p className="text-[24px] font-normal">Methely Armstrong</p>
+                <p className="text-[24px] text-[#6AECD9] font-normal">Methely Armstrong</p>
                 <p className="text-md text-[#9B9EA1]">Fullstack & Blockchain Dev</p>
               </div>
               <div className="mt-6 text-[#9B9EA1]">
-                {[
-                  {
-                    icon: "link",
-                    text: "www.github.com/MethelyDev",
-                    href: "https://www.github.com/MethelyDev",
-                  },
-                ].map(({ text, href }) => (
-                  <div key={text} className="flex items-center justify-start gap-4 mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="#6AECD9"
-                      className="size-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-                      />
-                    </svg>
-                    {href ? <Link href={href}>{text}</Link> : <span>{text}</span>}
-                  </div>
-                ))}
+                <div className="flex items-center justify-start gap-4 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="#6AECD9"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                    />
+                  </svg>
+                  <Link href="https://www.github.com/MethelyDev">www.github.com/MethelyDev</Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row md:items-start md:justify-start gap-10 pt-10">
-            <div className="">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-start ">
+            <div className="w-full">
+              <div className="w-80 h-80 mx-auto mb-8 relative">
+                <Image
+                  src="/black lion.jpeg"
+                  alt="Black Lion"
+                  width={288}
+                  height={288}
+                  className="rounded-full border-4 border-gray-700 object-cover"
+                  priority
+                />
+              </div>
+
               <div>
                 <p className="text-[34px] lg:text-[46px] pl-4 leading-[50px] font-medium">
                   <span className="text-[#6AECD9]">METHELY</span>
@@ -64,9 +68,9 @@ const MethelyProfile: NextPage = () => {
             </div>
             <div className="py-10 px-8 bg-[#1A1E23] rounded-lg md:rounded-full">
               {[
-                { number: "4", text: "Programming Languages" },
+                { number: "5", text: "Programming Languages" },
                 { number: "6", text: "Development Tools" },
-                { number: "3+", text: "Years of Experience" },
+                { number: "1", text: "Year of Experience" },
               ].map(item => (
                 <div
                   key={item.text}
