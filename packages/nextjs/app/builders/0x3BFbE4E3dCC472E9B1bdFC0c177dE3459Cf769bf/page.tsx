@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 import { NextPage } from "next";
 import { useTheme } from "next-themes";
 import { Address } from "~~/components/scaffold-eth";
@@ -44,6 +43,7 @@ const LynndabelProfile: NextPage = () => {
                   alt="Lynndabel's Avatar" 
                   width={128} 
                   height={128} 
+                  priority
                   className="rounded-full object-cover"
                 />
               </div>
@@ -59,7 +59,7 @@ const LynndabelProfile: NextPage = () => {
                 Blockchain Developer
               </span>
             </div>
-            <p className="text-lg text-accent mb-6 max-w-xs mx-auto">
+            <p className="text-lg text-gray-800 dark:text-gray-200 mb-6 max-w-xs mx-auto">
               Creating digital experiences & exploring blockchain innovations
             </p>
 
