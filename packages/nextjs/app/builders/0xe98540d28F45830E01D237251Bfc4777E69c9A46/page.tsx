@@ -8,13 +8,13 @@ const MethelyProfile: NextPage = () => {
       <div className="flex-1">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start justify-start gap-14 mt-20">
           <div className="relative">
-            <div className="absolute top-0 left-0 w-full h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
-            <div className="leaf-shaped py-8 px-6 md:px-10 border-2 flex flex-col items-center justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10">
+            <div className="absolute top-0 left-0 w-full h-full rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
+            <div className="leaf-shaped py-8 px-6 md:px-10 border-2 flex flex-col items-center justify-start rounded-tl-[100px] rounded-br-[100px] relative z-10">
               <div className="flex flex-col items-center justify-start">
-                <div className="w-24 h-24 rounded-full bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] text-[20px] font-bold text-white flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] text-[20px] font-bold text-black flex items-center justify-center">
                   MTH
                 </div>
-                <p className="text-[24px] text-[#6AECD9] font-normal">Methely Armstrong</p>
+                <p className="text-[24px] text-black font-bold">Methely Armstrong</p>
                 <p className="text-md text-[#9B9EA1]">Fullstack & Blockchain Dev</p>
               </div>
               <div className="mt-6 text-[#9B9EA1]">
@@ -66,7 +66,7 @@ const MethelyProfile: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="py-10 px-8 bg-[#1A1E23] rounded-lg md:rounded-full">
+            <div className="py-10 px-8 rounded-lg md:rounded-full">
               {[
                 { number: "5", text: "Programming Languages" },
                 { number: "6", text: "Development Tools" },
