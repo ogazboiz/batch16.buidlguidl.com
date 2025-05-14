@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { FaTwitter, FaGithub } from "react-icons/fa";
 import { NextPage } from "next";
 import { useTheme } from "next-themes";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import { Address } from "~~/components/scaffold-eth";
 
 const BUILDER_ADDRESS = "0x3BFbE4E3dCC472E9B1bdFC0c177dE3459Cf769bf";
@@ -26,7 +26,7 @@ const LynndabelProfile: NextPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 font-sans">
       <div
-        className={`w-full max-w-md mx-auto overflow-hidden rounded-3xl shadow-md shadow-secondary ${isDarkMode ? 'bg-base-100' : 'bg-white'} transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"} transition-all duration-700`}
+        className={`w-full max-w-md mx-auto overflow-hidden rounded-3xl shadow-md shadow-secondary ${isDarkMode ? "bg-base-100" : "bg-white"} transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"} transition-all duration-700`}
       >
         <div className="relative">
           <div className="h-36 bg-secondary overflow-hidden relative">
@@ -38,11 +38,11 @@ const LynndabelProfile: NextPage = () => {
           <div className="absolute left-0 right-0 -bottom-16 flex justify-center">
             <div className="p-1 bg-secondary rounded-full shadow-md shadow-secondary group">
               <div className="p-1 bg-base-100 rounded-full overflow-hidden transform transition-all duration-300 group-hover:scale-105">
-                <Image 
-                  src="/lynnavatar.jpg" 
-                  alt="Lynndabel's Avatar" 
-                  width={128} 
-                  height={128} 
+                <Image
+                  src="/lynnavatar.jpg"
+                  alt="Lynndabel's Avatar"
+                  width={128}
+                  height={128}
                   priority
                   className="rounded-full object-cover"
                 />
@@ -72,7 +72,6 @@ const LynndabelProfile: NextPage = () => {
               </div>
             </div>
           </div>
-
 
           <div className="divider before:bg-secondary after:bg-secondary">Connect</div>
 
