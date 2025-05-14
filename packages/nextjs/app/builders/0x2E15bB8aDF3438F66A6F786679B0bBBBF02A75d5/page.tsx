@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { GithubIcon, TelegramIcon, TwitterIcon } from "./_components/Icons";
+import { NextPage } from "next";
 import { Address } from "~~/components/scaffold-eth";
 
 // Skills arrays
@@ -10,7 +11,13 @@ const frontendSkills = ["React", "Next.js", "TailwindCSS", "TypeScript"];
 const otherSkills = ["IPFS", "The Graph", "ENS", "ERC Standards"];
 
 // Social links
-const socialLinks = [
+interface SocialLink {
+  href: string;
+  label: string;
+  icon: React.ReactNode;
+}
+
+const socialLinks: SocialLink[] = [
   {
     href: "https://github.com/ogazboiz",
     label: "GitHub Profile",
@@ -43,7 +50,7 @@ const socialLinks = [
 // Ethereum address
 const myAddress = "0x2E15bB8aDF3438F66A6F786679B0bBBBF02A75d5";
 
-export default function BuilderPage() {
+const AkpoloOgagaProfile: NextPage = () => {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-base-200)" }}>
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -114,7 +121,7 @@ export default function BuilderPage() {
                   <span className="font-medium" style={{ color: "var(--color-primary)" }}>
                     Experience:
                   </span>
-                  <span style={{ color: "var(--color-base-content)" }}>4+ Years</span>
+                  <span style={{ color: "var(--color-base-content)" }}>1+ Years</span>
                 </div>
               </div>
             </section>
@@ -345,4 +352,6 @@ export default function BuilderPage() {
       </div>
     </div>
   );
-}
+};
+
+export default AkpoloOgagaProfile;
